@@ -1,0 +1,22 @@
+{
+  "name": "neneone/apicreator",
+  "description": "A simple method to create APIs.",
+  "authors": [
+    {
+      "name": "Neneone",
+      "homepage": "https://www.neneone.it"
+    }
+  ],
+  "type": "client",
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-0": {
+      "neneone\\apicreator\\": "src/"
+    },
+    "files": [
+            "src/class.php"
+    ]
+  }
+}
