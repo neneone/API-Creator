@@ -1,6 +1,7 @@
 <?php
 
 namespace neneone\apicreator;
+use \Exception;
 
 class API {
 
@@ -18,23 +19,16 @@ class API {
     }
 
     if(!$success) {
-      $this->fail('Invalid password');
+      throw new Exception('Invalid password');
     }
-  }
-
-  public function fail($error) {
-    $this->error = $error;
-    exit($this->error);
   }
 
   public function set($parameters) {
     $base = $this->base;
 
-    if(is_array($parameters) == false) {
-
+    if(!$parameters){
+      throw new Exception('Invalid parameters');
       return false;
-
-      $this->fail('Invalid parameters');
     }
 
     foreach($parameters as $key => $value) {
@@ -44,9 +38,7 @@ class API {
         $base[$key] = $value;
       }
     }
-
     $this->base = $base;
-
     return true;
   }
 
@@ -54,5 +46,6 @@ class API {
     header('content-type: application/json');
     echo json_encode($this->base);
     $this->base = false; //idk
+    return true; // BOH
   }
 }
