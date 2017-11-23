@@ -4,6 +4,8 @@ namespace neneone\apicreator;
 use \Exception;
 
 class API {
+  
+  public $base;
 
   public function __construct($base) {
     $this->base = $base;
