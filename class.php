@@ -40,6 +40,7 @@ class API {
     return true;
   }
   public function run() {
+    header('Content-Type: application/json');
     echo json_encode($this->base);
     $this->base = false;
   }
