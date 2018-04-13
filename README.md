@@ -1,5 +1,6 @@
 # [API-Creator](https://github.com/Neneone/API-Creator)
 A simple way to create APIs.
+
 ---
 ## Menù:
 * [Requirements](#requirements)
@@ -11,6 +12,7 @@ A simple way to create APIs.
 * PHP 5.6, or higher
 * PHP-JSON extension
 * Webserver
+* Composer
 ---
 ## Getting Started
 You need only a thing, this repo!
@@ -29,6 +31,6 @@ $API = new neneone\apicreator\API($array);
 ## Methods
 |Method|Required|Returns|Description|Ex. Usage|
 |------|--------|-------|-----------|---------|
-|construct|Yes|NULL|The object istance, the initial array|`$API = new neneone\apicreator\API(['ok' => true]);`|
+|construct|Yes|NULL|The instance, the initial array|`$API = new neneone\apicreator\API(['ok' => true]);`|
 |set|Optional|NULL|Set an array|`$obj->set(['done' => true]);`|
 |run|Yes|JSON Encoded Array|Create the JSON encoded array|`$obj->run()`|
