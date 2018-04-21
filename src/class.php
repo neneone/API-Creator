@@ -1,7 +1,6 @@
 <?php
 
 namespace neneone\apicreator;
-
 use Exception;
 
 class API
@@ -14,23 +13,18 @@ class API
     public function set($parameters)
     {
         $base = $this->base;
-        if (!$parameters) {
-            throw new Exception('Invalid parameters');
-        }
+        if(!$parameters) throw new Exception('Invalid parameters');
         foreach ($parameters as $key => $value) {
-            if (is_numeric($key)) {
-                $base[] = $value;
-            } else {
-                $base[$key] = $value;
-            }
+            if(is_numeric($key)) $base[] = $value;
+            else $base[$key] = $value;
         }
         $this->base = $base;
     }
 
-    public function run()
+    public function run($pretty_print = false)
     {
-        header('content-type: application/json');
-
-        return json_encode($this->base);
+        header('Content-Type: application/json');
+        if($pretty_print) return json_encode($this->base, JSON_PRETTY_PRINT);
+     	else return json_encode($this->base);   
     }
 }
