@@ -2,7 +2,7 @@
 A simple way to create APIs.
 
 ---
-## Menù:
+## Index:
 * [Requirements](#requirements)
 * [Getting started](#getting-started)
 * [Methods](#methods)
