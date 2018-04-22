@@ -13,18 +13,16 @@ class API
 
     public function set($parameters)
     {
-        $base = $this->base;
         if (!$parameters) {
             throw new Exception('Invalid parameters');
         }
         foreach ($parameters as $key => $value) {
             if (is_numeric($key)) {
-                $base[] = $value;
+                $this->base[] = $value;
             } else {
-                $base[$key] = $value;
+                $this->base[$key] = $value;
             }
         }
-        $this->base = $base;
     }
 
     public function run($pretty_print = false)
