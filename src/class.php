@@ -11,7 +11,7 @@ class API
 
     public function set($parameters)
     {
-    	foreach ($parameters as $key => $value) {
+        foreach ($parameters as $key => $value) {
             if (is_numeric($key)) {
                 $this->base[] = $value;
             } else {
