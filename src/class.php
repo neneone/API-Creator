@@ -2,8 +2,6 @@
 
 namespace neneone\apicreator;
 
-use Exception;
-
 class API
 {
     public function __construct($base)
@@ -13,10 +11,7 @@ class API
 
     public function set($parameters)
     {
-        if (!$parameters) {
-            throw new Exception('Invalid parameters');
-        }
-        foreach ($parameters as $key => $value) {
+    	foreach ($parameters as $key => $value) {
             if (is_numeric($key)) {
                 $this->base[] = $value;
             } else {

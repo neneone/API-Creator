@@ -33,4 +33,4 @@ $API = new neneone\apicreator\API($array);
 |------|--------|-------|-----------|---------|
 |construct|Yes|NULL|The instance, the initial array|`$API = new neneone\apicreator\API(['ok' => true]);`|
 |set|Optional|NULL|Set an array|`$obj->set(['done' => true]);`|
-|run|Yes|JSON Encoded Array|Create the JSON encoded array|`$obj->run()`|
+|run|Yes|JSON Encoded Array|Create the JSON encoded array|`$obj->run( True/False (if you want JSON PRETTY PRINT) )`|
