@@ -1,6 +1,7 @@
 {
     "name": "triggerednick/apicreator",
     "description": "A simple method to create APIs.",
+    "license": "GPL-3.0",
     "authors": [
     	{
     		"name": "TRIGGEREDNICK"
