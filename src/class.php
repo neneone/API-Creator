@@ -1,6 +1,6 @@
 <?php
 
-namespace neneone\apicreator;
+namespace TRIGGEREDNICK\APICreator;
 
 class API
 {

@@ -1,10 +1,12 @@
 {
-    "name": "neneone/apicreator",
+    "name": "triggerednick/apicreator",
     "description": "A simple method to create APIs.",
     "authors": [
+    	{
+    		"name": "TRIGGEREDNICK"
+    	},
         {
-        "name": "Neneone",
-        "homepage": "https://www.neneone.it"
+        	"name": "Neneone"
         }
     ],
     "type": "client",
@@ -14,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "neneone\\apicreator\\": "src/"
+            "TRIGGEREDNICK\\ApiCreator\\": "src/"
         }
     }
 }
