@@ -4,6 +4,8 @@ namespace TRIGGEREDNICK\APICreator;
 
 class API
 {
+    private $base;
+    
     public function __construct($base)
     {
         $this->base = $base;
@@ -19,10 +21,14 @@ class API
             }
         }
     }
+    
+    public function setHeader(){
+        header('Content-Type: application/json');
+    }
 
     public function run($pretty_print = false)
     {
-        header('Content-Type: application/json');
+        $this->setHeader();
         if ($pretty_print) {
             return json_encode($this->base, JSON_PRETTY_PRINT);
         } else {
