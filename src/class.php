@@ -5,7 +5,7 @@ namespace TRIGGEREDNICK\APICreator;
 class API
 {
     private $base;
-    
+
     public function __construct($base)
     {
         $this->base = $base;
@@ -21,8 +21,9 @@ class API
             }
         }
     }
-    
-    public function setHeader(){
+
+    public function setHeader()
+    {
         header('Content-Type: application/json');
     }
 
