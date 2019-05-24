@@ -11,11 +11,11 @@ echo $API->run();
 echo $API->run(true);
 /* Result:
 {
-	"ok": true,
-	"working": true,
-	"result": {
-		"one": true,
-		"example2": "second example"
-		}
-	}
+    "ok": true,
+    "working": true,
+    "result": {
+        "one": true,
+        "example2": "second example"
+        }
+    }
 */

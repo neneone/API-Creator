@@ -25,7 +25,7 @@ class API
     public function run($pretty_print = false)
     {
         header('Content-Type: application/json');
-        
+
         if ($pretty_print) {
             return json_encode($this->base, JSON_PRETTY_PRINT);
         } else {
