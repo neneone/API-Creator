@@ -22,14 +22,10 @@ class API
         }
     }
 
-    public function setHeader()
-    {
-        header('Content-Type: application/json');
-    }
-
     public function run($pretty_print = false)
     {
-        $this->setHeader();
+        header('Content-Type: application/json');
+        
         if ($pretty_print) {
             return json_encode($this->base, JSON_PRETTY_PRINT);
         } else {

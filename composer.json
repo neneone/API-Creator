@@ -5,10 +5,7 @@
     "authors": [
     	{
     		"name": "TRIGGEREDNICK"
-    	},
-        {
-        	"name": "Neneone"
-        }
+    	}
     ],
     "type": "client",
     "require": {
@@ -16,8 +13,8 @@
         "ext-json": "*"
     },
     "autoload": {
-        "psr-4": {
-            "TRIGGEREDNICK\\ApiCreator\\": "src/"
-        }
+        "files": [
+        	"src/class.php"
+        ]
     }
 }
